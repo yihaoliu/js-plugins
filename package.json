@@ -1,0 +1,27 @@
+{
+  "name": "js-plugins",
+  "version": "1.0.0",
+  "description": "js 插件封装模板",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yihaoliu/js-plugins.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yihaoliu/js-plugins/issues"
+  },
+  "homepage": "https://github.com/yihaoliu/js-plugins#readme",
+  "devDependencies": {
+    "webpack-cli": "^3.3.7"
+  },
+  "dependencies": {
+    "global": "^4.4.0",
+    "webpack": "^4.39.3"
+  }
+}
