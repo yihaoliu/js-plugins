@@ -4,8 +4,9 @@
   "description": "js 插件封装模板",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "test": "jest",
+    "dev": "webpack-dev-server --config ./webpack/webpack.dev.js",
+    "build": "webpack --config ./webpack/webpack.prod.js"
   },
   "repository": {
     "type": "git",
@@ -17,11 +18,28 @@
     "url": "https://github.com/yihaoliu/js-plugins/issues"
   },
   "homepage": "https://github.com/yihaoliu/js-plugins#readme",
-  "devDependencies": {
-    "webpack-cli": "^3.3.7"
-  },
   "dependencies": {
-    "global": "^4.4.0",
-    "webpack": "^4.39.3"
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-loader": "^8.0.0-beta.0"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.2.0",
+    "eslint": "^6.3.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^3.0.0",
+    "eslint-plugin-react": "^7.14.3",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.9.0",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
+    "style-loader": "^1.0.0",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-server": "^3.8.0",
+    "webpack-merge": "^4.2.2",
+    "webpack-sources": "^1.4.3"
   }
 }
